@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Chat accesible con ARIA</title>
+</head>
+<body>
+	<h1>Chat accesible con ARIA</h1>
+	<h2>Redactar</h2>
+	<label for="txtText">Texto:</label>
+	<textarea  id="txtText"></textarea>
+	<button id="btnSend">Enviar</button>
+	<h2>Mensajes:</h2>
+	<div role="log" aria-live="assertive" aria-atomic="true">
+	<ul id="msgList">
+
+	</ul>
+		</div>
+	<script src="jquery.js"></script>
+	<script src="chat.js"></script>
+</body>
+</html>
